@@ -2,8 +2,8 @@ def check_letter(input_text ,letter,output1):
     output1=list(output1)
     output2=""
     check=False
-    for index, element in  enumerate(input_text):
-        if element==letter and element != output1[index]:
+    for index, element in  enumerate(input_text):                           # tworzy numerowany słownik z elementami listy
+        if element.lower()==letter.lower() and element != output1[index]:
             output2+=element
             check=True
         else:
